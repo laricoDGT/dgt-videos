@@ -42,13 +42,11 @@
     }
   }
 
-  $('.lets-play').click(function (e) {
+  $(document).on('click', '.lets-play', function (e) {
     e.preventDefault()
     var $theVideo = videoId($(this))
     if ($theVideo) {
-      $('body')
-        .append('<div class="active" id="video-wrap"><span class="video-overlay"></span><div class="video-container">' + $theVideo + '</div><button class="close-video">x</button></div>')
-        .addClass('active')
+      $('body').append('<div class="active" id="video-wrap"><span class="video-overlay"></span><div class="video-container">' + $theVideo + '</div><button class="close-video">x</button></div>')
     }
   })
 
