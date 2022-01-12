@@ -60,5 +60,3 @@
   </div>
 
 </div>
-
-<div id="video-wrap-modal" class="video-modal"></div>
