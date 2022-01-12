@@ -52,6 +52,10 @@
     }
   })
 
+  $(document).on('click', '.show-videos', function () {
+    $('.video-items').toggleClass('active')
+  })
+
   $(document).on('click', '.close-video, .video-overlay', function () {
     $('#video-wrap').remove()
   })
